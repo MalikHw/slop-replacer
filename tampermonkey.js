@@ -1,9 +1,11 @@
+// ==UserScript==
+// @name        Slop Replacer
 // @version     1.0
 // @description Change slop text with better ones that actually make sense in this society.
 // @match       *://*/*
 // @grant       none
 // @run-at      document-end
-// ===/UserScript==
+// ==/UserScript==
 (function() {
     'use strict';
     const replacements = [
@@ -39,7 +41,6 @@
             return;
         }
 
-        if (node.nodeType === Node.ELEMENT_NODE) return;
         if (SKIP_TAGS.has(node.nodeName)) return;
         if (node.isContentEditable) return;
 
