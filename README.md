@@ -1,0 +1,1 @@
+https://malikhw.me/slop-replacer
